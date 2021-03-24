@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    // 正常函数
+    function add(a, b, c) {
+        console.log(a + b + c);
+    }
+
+    add(2, 3, 5)
+
+    // 匿名函数
+    let app = function (a, b) {
+        console.log(a * b)
+    }
+
+    app(4, 8)
+
+    let app2 = (a, b) => console.log(a * b);
+    app2(6, 7)
+
+    let app3 = function (a, b) {
+        console.log(a + b);
+        console.log(a * b);
+    }
+    app3(7, 8)
+
+    let app4 = (a, b) => {
+        console.log(a + b);
+        console.log(a * b);
+    }
+
+    app4(9, 9)
+</script>
+
+</body>
+</html>

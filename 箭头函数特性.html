@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let student = {
+        username: "小黑",
+        app: function () {
+            console.log(this)
+        }
+    }
+
+    let user = {
+        username: "小白",
+        app: function () {
+            setTimeout(function () {
+                console.log(this.username)
+            }, 1000)
+        }
+    }
+
+    let employee = {
+        username: "小黄",
+        app: function () {
+            setTimeout(() => {
+                console.log(this.username)
+            }, 1000)
+        }
+    }
+
+    employee.app()
+</script>
+
+</body>
+</html>
